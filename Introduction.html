@@ -6,27 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>北京前友推广信息科技有限公司</title>
     <link rel="icon" type="image/png" href="themes/icon/favicon.png">
-
-    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-
-    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-    <!-- 新 Bootstrap 核心 CSS 文件 -->
-    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
-
-    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-    <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
-
-    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-    <script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-
-    <!-- 最新的 Bootstrap  自定义样式 文件 -->
-    <link href="themes/css/home.css" rel="stylesheet"  type="text/css">
+    
+	<link rel="stylesheet" type="text/css" href="themes/css/bootstrap.css"/>
+   
+	<script src="themes/js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+    
+	<script src="themes/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+    
+	<link rel="stylesheet" type="text/css" href="themes/css/home.css"/>
 
 </head>
 <body>
-
-
-<!--------- header  begin------------->
 <div class=" container-fluid header-main header-section navbar-about service-background">
     <div class="header-back"></div>
     <nav class="navbar navbar-default  navbar-brands  navbar-abouts">
@@ -54,14 +44,12 @@
                     <li class="dropdown">
                         <a aria-expanded="false" role="button" aria-haspopup="true"  class="dropdown-toggle" href="Case.html" >经典案例</a>
                     </li>
-                    <!--<li class="active">-->
-                        <!--<a aria-expanded="false" role="button" aria-haspopup="true"  class="dropdown-toggle" href="Service.html" >朋友圈广告</a>-->
-                    <!--</li>-->
+                   
                     <li class="dropdown">
                         <a aria-expanded="false" role="button" aria-haspopup="true"  class="dropdown-toggle" href="contact.html" >联系我们</a>
                     </li>
                 </ul>
-            </div><!--/.nav-collapse -->
+            </div>
         </div>
     </nav>
     <div class="container container-zindex cover-container am-animation-scale-up" data-am-scrollspy="{animation: 'scale-up', repeat: false}">
@@ -70,7 +58,7 @@
     </div>
 
 </div>
-<!--------- header  End------------->
+
 
 <div style="height:30px;"></div>
 
@@ -207,21 +195,17 @@
         </div>
     </div>
 </footer>
-<!--------footer End-------->
+
 
 <script type="text/javascript">
-    /*!
-     * Adapted from Bootstrap docs JavaScript
-     */
+    
 
 
     !function ($) {
 
         $(function () {
 
-            // IE10 viewport hack for Surface/desktop Windows 8 bug
-            //
-            // See Getting Started docs for more information
+            
             if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
                 var msViewportStyle = document.createElement('style')
                 msViewportStyle.appendChild(
@@ -237,8 +221,7 @@
 
             $body.scrollspy({
                 target: '.sidebar',
-                offset: 20 // required to select the right thing. if this is smaller then you are at the top of one section
-                // but the next section is highlighted
+                offset: 20 
             });
 
             $window.on('load', function () {
@@ -255,7 +238,7 @@
                 var content = $('<span>').append($('#' + id)).html();
                 $(this).attr('data-content', content);
 
-                // Keep popovers open when hovered
+                
                 $(this).popover({
                     trigger: 'manual',
                     container: 'body',
@@ -286,7 +269,7 @@
             });
 
 
-            // back to top
+           
             setTimeout(function () {
                 var $sideBar = $('.sidebar')
 
